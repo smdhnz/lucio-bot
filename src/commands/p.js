@@ -7,7 +7,7 @@ const {
 } = require('@discordjs/voice');
 const q = require('../utils/queue.js');
 const p = require('../utils/player.js');
-const { apiKey } = require('../config.json');
+const apiKey = process.env.YT_API_KEY
 
 
 // build a command

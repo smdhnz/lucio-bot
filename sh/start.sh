@@ -1,5 +1,6 @@
 docker run \
+    --detach \
     --init \
+    --restart=always \
     --env-file=$(pwd)/.env \
-    smdhnz/lucio-bot \
-    node deploy-commands.js
+    smdhnz/lucio-bot
